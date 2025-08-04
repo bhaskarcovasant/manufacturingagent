@@ -41,8 +41,8 @@ def send_email(receiver_email: str, subject: str, body: str) -> dict:
     
     import os
 
-    sender_email = os.getenv("GMAIL_SENDER_EMAIL")
-    password = os.getenv("GMAIL_PASSWORD")
+    sender_email = "swetha26072002@gmail.com"
+    password = "dsrnyzgfdgylpywx"
 
     receiver_email = receiver_email
 
@@ -81,7 +81,7 @@ def create_orchestrator_agent() -> LlmAgent:
     ]
     
     llm_model = LiteLlm(
-        model=os.getenv("MODEL_NAME"),
+        model="openai/gpt-4o",
         base_url=os.getenv("LITELLM_URL"),
         api_key="sk-1",
         headers={
