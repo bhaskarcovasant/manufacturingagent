@@ -60,7 +60,10 @@ def create_maintenance_agent() -> LlmAgent:
         api_key="sk-1",
         headers={
             "appid": os.getenv("AGENT_ID"),
-            "tenantid": os.getenv("TENANT_ID")
+            "tenantid": os.getenv("TENANT_ID"),
+            "userid": "user_123_456",
+            "sessionid": "session_123_456",
+            "teamid": "team_123_456"
         }
     )
     
