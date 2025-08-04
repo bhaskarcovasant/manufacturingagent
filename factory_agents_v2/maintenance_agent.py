@@ -55,7 +55,7 @@ def create_maintenance_agent() -> LlmAgent:
     ]
     
     llm_model = LiteLlm(
-        model=os.getenv("MODEL_NAME"),
+        model="gpt-4o",
         base_url=os.getenv("LITELLM_URL"),
         api_key="sk-1",
         headers={
